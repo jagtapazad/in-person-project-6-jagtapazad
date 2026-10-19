@@ -1,5 +1,10 @@
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 import './App.css'
 
 // The parent owns the data; children receive it as props
@@ -46,7 +51,12 @@ function App() {
   return (
     <div className="portfolio">
       <Navbar />
+      <Hero />
+      <About />
+      <Skills />
       <Projects projects={projects} />
+      <Contact />
+      <Footer projectCount={projects.length} />
     </div>
   )
 }
